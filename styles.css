@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+ 
+ 
+ /* Estilos generales */
+ body {
+    display: grid;
+    grid-column-gap: 10% 10% 10% 10%;
+    grid-template-areas: 
+        "header header header header" 
+        "main main main main" 
+        "footer footer footer footer"; 
+}
+
+p {
+  color:#412C25;
+  font-size: 18px;
+}
+h1 {
+  color: #412C25;
+}
+
+button {
+  padding: 10px;
+  width: 230px;
+  border: 1px solid #412C25;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Estilos del header */
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+  width: 100%;
+  font-weight: 500;
+  color: #412C25; /* Color del texto del header */
+  background-color: #FEF9F5; /* Color de fondo del header */
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  z-index: 1002; 
+    }
+
+    .container-fluid {
+      background-color: #FEF9F5;
+      padding: 0%;
+      height: 100px;
+      width: 100%;
+    }
+
+    .navbar {
+      flex-grow: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    header .navbar {
+      height: 100px;
+      margin-top: 0%;
+      padding: 0%; 
+    }
+
+    nav li a {
+      list-style: none;
+      text-decoration: none; 
+    }
+
+    nav li {
+      width: 180px;
+      position: relative; 
+    }
+  
+    nav ul {
+      list-style: none;
+      text-align: center; 
+    }
+  
+    nav ul ul {
+      position: absolute;
+      display: none;
+      text-align: left; 
+    }
+  
+    a.nav-link:hover {
+      color: #FAA51A; 
+    }
+  
+    .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+      align-items: center; 
+    }
+    
+    .dropdown-menu a.dropdown-item{
+      color: #412C25;
+      font-weight: 300;
+    }
+
+    a.dropdown-item:hover {
+      background-color: #FAA51A;
+    }
+  
+    .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 0;
+      align-items: center; 
+    }
+
+    .logoheader {
+      width: 100px; /* Ajusta el ancho del logo según las necesidades */
+      height: auto;
+      margin: 0 50px 0 50px;
+      border-radius: 50px;
+    }
+
+/* Estilos del Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  grid-area: main;
+  background-color: #ffff; 
+}
+
+.parallas, .main, .texto {
+    margin: 0 auto; 
+}
+  
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 43rem;
+    max-width: 100%;
+    position: relative; 
+}
+
+.heroH1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight:500;
+    left: 8%;
+    position:absolute;
+    text-align:left;
+    top: 25%;
+    z-index: 1001;
+}
+
+img, .d-block {
+  opacity: 0.7;
+}
+
+.carousel-item {
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Sobre nosotros */
+
+.sobrenosotros {
+  padding: 5% 15%;
+  background-color: #F5EAD4;
+  gap: 20px;
+  height: 400px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.conocenosbtn {
+  border-radius: 14px;
+  background-color: #412C25;
+  color: #F5EAD4;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Muebles */
+
+.muebles {
+  padding: 3% 15%;
+} 
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  grid-area: footer;
+  background-color: #CF5D20;
+  color: #EDEDED;
+}
+  footer .grupo-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 5%; }
+  footer .box {
+    display: flex;
+    align-items: center;
+    padding: 20px; }
+  footer .box_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px; }
+  footer .redes a {
+    padding: 0px 20px;
+    justify-content: space-evenly; }
+  footer .servicios a {
+    text-decoration: none;
+    color: #EDEDED; }
+  footer .box_1 .contacto {
+    display: flex;
+    flex-direction: column; }
+  footer .contacto a {
+    text-decoration: none;
+    color: #EDEDED; }
