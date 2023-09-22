@@ -119,10 +119,11 @@ header {
     }
 
     .logoheader {
-      width: 100px; /* Ajusta el ancho del logo según las necesidades */
+      width: 200px; /* Ajusta el ancho del logo según las necesidades */
       height: auto;
       margin: 0 50px 0 50px;
       border-radius: 50px;
+      opacity: 1;
     }
 
 /* Estilos del Main */
