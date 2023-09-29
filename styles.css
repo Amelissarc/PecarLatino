@@ -216,6 +216,94 @@ img, .d-block {
   }
 }
 
+/* Deco */
+.section_deco {
+  background-color: #CF5D20;
+}
+
+.card_deco {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+  margin: 2% 15%; 
+}
+.img_deco img {
+    width: 400px;
+    height: 500px;
+    opacity: 1;
+}
+
+.text_deco {
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  margin-left: 5%;
+}
+
+.p_deco {
+  padding: 20% 5%;
+  color: #fff;
+}
+
+.card_deco_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #412C25;
+  background-color: #F5EAD4;
+  padding: 5px;
+  width: 200px;
+  margin-left: 35%;
+}
+
+/* Proyectos a medida */
+.card_proyectos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+  margin: 2% 15%; 
+}
+.img_proyectos img {
+    width: 400px;
+    height: 500px;
+    opacity: 1;
+}
+
+.text_proyectos {
+  text-align: center;
+  justify-content: center;
+  color: #412C25;
+  margin-right: 5%;
+}
+
+.text_proyectos h3 {
+  color: #7B421B;
+}
+
+.p_proyectos {
+  padding: 20% 5%;
+  color: #412C25;
+}
+
+.card_proyectos_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #7B421B;
+  padding: 5px;
+  width: 200px;
+  margin-left: 30%;
+
+}
+
+/* Café */
+
+.img-dos {
+  background-image: url("https://img.freepik.com/foto-gratis/taza-cafe-disposicion-mujeres-textura-madera_1150-12747.jpg?w=996&t=st=1695941139~exp=1695941739~hmac=71a888c7f9115c4934566ec941f9ec61d545e5fa482c061d8e18866e259ef46d"); }
+
 /* footer */
 footer {
   display: flex;
@@ -229,7 +317,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 5%; }
+    padding: 10px 5%; }
   footer .box {
     display: flex;
     align-items: center;
@@ -238,10 +326,22 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 5px; }
+    padding: 10px 5px; 
+    }
+  .showroom, p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+    color: #fff;
+    text-align: center;
+  }
   footer .redes a {
     padding: 0px 20px;
     justify-content: space-evenly; }
+  footer .redes img {
+    opacity: 1;
+  }
   footer .servicios a {
     text-decoration: none;
     color: #EDEDED; }
