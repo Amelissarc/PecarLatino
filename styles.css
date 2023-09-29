@@ -179,6 +179,10 @@ img, .d-block {
   height: 400px;
 }
 
+.sobrenosotros p {
+  color: #412C25;
+}
+
 .button {
   display: flex;
   justify-content: center;
