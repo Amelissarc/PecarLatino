@@ -18,7 +18,13 @@ footer {
         .box {
             display: flex;
             align-items: center;
-            padding: 20px;
+            padding: 20px;           
+
+            a {
+                .img_box {
+                    width: 150px;
+                }
+            }
         }
 
         .box_1 {

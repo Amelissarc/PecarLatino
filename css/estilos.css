@@ -97,8 +97,8 @@ header {
 
 /** VARIABLES **/
 /* Estilos del Main */
-/**----------------------------------------MAIN INDEX------------------------ **/
 main {
+  /**----------------------------------------MAIN INDEX------------------------ **/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,8 +111,9 @@ main {
   /* Index -Espacios */
   /* Index - Deco */
   /* Index - Proyectos a medida */
-  /* Index - Café */ }
-  main .parallax {
+  /* Index - Café */
+  /**----------------------------------------MAIN SOBRE NOSOTROS------------------------ **/ }
+  main .hero .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,10 +122,10 @@ main {
     max-width: 100%;
     position: relative;
     margin: 0 auto; }
-    main .parallax .carousel-item {
-      background-color: rgba(0, 0, 0, 0.6); }
-      main .parallax .carousel-item .heroH1 {
-        color: #000000;
+    main .hero .parallax .carousel-item {
+      background-color: black; }
+      main .hero .parallax .carousel-item .heroH1 {
+        color: #ffffff;
         font-size: 60px;
         font-weight: 500;
         left: 8%;
@@ -132,9 +133,9 @@ main {
         text-align: left;
         top: 25%;
         z-index: 1001; }
-      main .parallax .carousel-item img {
+      main .hero .parallax .carousel-item img {
         opacity: 0.7; }
-      main .parallax .carousel-item .d-block {
+      main .hero .parallax .carousel-item .d-block {
         opacity: 0.7; }
   main .sobrenosotros {
     padding: 5% 15%;
@@ -227,8 +228,35 @@ main {
     opacity: 1; }
   main .img-dos {
     background-image: url("https://img.freepik.com/foto-gratis/taza-cafe-disposicion-mujeres-textura-madera_1150-12747.jpg?w=996&t=st=1695941139~exp=1695941739~hmac=71a888c7f9115c4934566ec941f9ec61d545e5fa482c061d8e18866e259ef46d"); }
+  main .principal_sobre_nosotros {
+    color: black;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center; }
+  main .imagenes_sobre_nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; }
+    main .imagenes_sobre_nosotros .sobre_nosotros_img {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+      margin-bottom: 50px; }
+      main .imagenes_sobre_nosotros .sobre_nosotros_img img {
+        max-width: 700px;
+        height: auto; }
+    main .imagenes_sobre_nosotros .bienvenidos-text {
+      text-align: center; }
+      main .imagenes_sobre_nosotros .bienvenidos-text p {
+        color: #000000;
+        margin-bottom: 50px;
+        width: 1400px; }
 
-/**----------------------------------------MAIN SOBRE NOSOTROS------------------------ **/
 /** VARIABLES **/
 /*-----------------------------FOOTER---------------------------*/
 footer {
@@ -247,6 +275,8 @@ footer {
       display: flex;
       align-items: center;
       padding: 20px; }
+      footer .grupo-1 .box a .img_box {
+        width: 150px; }
     footer .grupo-1 .box_1 {
       display: flex;
       flex-direction: column;
