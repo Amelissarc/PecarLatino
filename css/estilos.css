@@ -1,0 +1,278 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,900&display=swap");
+/*----------------RESET--------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300; }
+
+/*------------------Grilla------------------*/
+.grid-contenedor {
+  display: grid;
+  grid-column-gap: 10% 10% 10% 10%;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+
+/* Estilos generales */
+p {
+  color: #412C25;
+  font-size: 18px; }
+
+h1 {
+  color: #412C25; }
+
+button {
+  padding: 10px;
+  width: 230px;
+  border: 1px solid #412C25; }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+/** VARIABLES **/
+/** VARIABLES **/
+/*----------------HEADER----------------------*/
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+  width: 100%;
+  font-weight: 500;
+  color: #412C25;
+  background-color: #FEF9F5;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  z-index: 1002; }
+  header .container-fluid {
+    background-color: #FEF9F5;
+    padding: 0%;
+    height: 100px;
+    width: 100%; }
+  header .navbar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end; }
+  header .navbar {
+    height: 100px;
+    margin-top: 0%;
+    padding: 0%; }
+  header nav li a {
+    list-style: none;
+    text-decoration: none; }
+  header nav li {
+    width: 180px;
+    position: relative; }
+  header nav ul {
+    list-style: none;
+    text-align: center; }
+  header nav ul ul {
+    position: absolute;
+    display: none;
+    text-align: left; }
+  header a.nav-link:hover {
+    color: #FAA51A; }
+  header .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center; }
+  header .dropdown-menu a.dropdown-item {
+    color: #412C25;
+    font-weight: 300; }
+  header a.dropdown-item:hover {
+    background-color: #FAA51A; }
+  header .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center; }
+  header .logoheader {
+    width: 200px;
+    height: auto;
+    margin: 0 50px 0 50px;
+    border-radius: 50px;
+    opacity: 1; }
+
+/** VARIABLES **/
+/* Estilos del Main */
+/**----------------------------------------MAIN INDEX------------------------ **/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  grid-area: main;
+  background-color: #ffff;
+  margin: 0 auto;
+  /* Index - Sobre nosotros */
+  /* Index - Muebles */
+  /* Index -Espacios */
+  /* Index - Deco */
+  /* Index - Proyectos a medida */
+  /* Index - Café */ }
+  main .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 43rem;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto; }
+    main .parallax .carousel-item {
+      background-color: rgba(0, 0, 0, 0.6); }
+      main .parallax .carousel-item .heroH1 {
+        color: #000000;
+        font-size: 60px;
+        font-weight: 500;
+        left: 8%;
+        position: absolute;
+        text-align: left;
+        top: 25%;
+        z-index: 1001; }
+      main .parallax .carousel-item img {
+        opacity: 0.7; }
+      main .parallax .carousel-item .d-block {
+        opacity: 0.7; }
+  main .sobrenosotros {
+    padding: 5% 15%;
+    background-color: #F5EAD4;
+    gap: 20px;
+    height: 400px; }
+    main .sobrenosotros p {
+      color: #412C25; }
+    main .sobrenosotros .button {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center; }
+      main .sobrenosotros .button .conocenosbtn {
+        border-radius: 14px;
+        background-color: #412C25;
+        color: #F5EAD4;
+        font-size: 18px;
+        font-weight: 400; }
+  main .muebles {
+    padding: 3% 15%; }
+  main .card-group {
+    gap: 20px;
+    padding: 5% 15%; }
+    main .card-group .card img {
+      height: 500px;
+      opacity: 1; }
+    main .card-group .card-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #FAA51A; }
+  main .section_deco {
+    background-color: #CF5D20; }
+    main .section_deco .card_deco {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 2%;
+      margin: 2% 15%; }
+    main .section_deco .img_deco img {
+      width: 400px;
+      height: 500px;
+      opacity: 1; }
+    main .section_deco .text_deco {
+      text-align: center;
+      justify-content: center;
+      color: #fff;
+      margin-left: 5%; }
+      main .section_deco .text_deco .p_deco {
+        padding: 20% 5%;
+        color: #fff; }
+      main .section_deco .text_deco .card_deco_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #412C25;
+        background-color: #F5EAD4;
+        padding: 5px;
+        width: 200px;
+        margin-left: 35%; }
+  main .card_proyectos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+    margin: 2% 15%; }
+  main .text_proyectos {
+    text-align: center;
+    justify-content: center;
+    color: #412C25;
+    margin-right: 5%; }
+    main .text_proyectos h3 {
+      color: #7B421B; }
+    main .text_proyectos .p_proyectos {
+      padding: 20% 5%;
+      color: #412C25; }
+    main .text_proyectos .card_proyectos_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background-color: #7B421B;
+      padding: 5px;
+      width: 200px;
+      margin-left: 30%; }
+  main .img_proyectos img {
+    width: 400px;
+    height: 500px;
+    opacity: 1; }
+  main .img-dos {
+    background-image: url("https://img.freepik.com/foto-gratis/taza-cafe-disposicion-mujeres-textura-madera_1150-12747.jpg?w=996&t=st=1695941139~exp=1695941739~hmac=71a888c7f9115c4934566ec941f9ec61d545e5fa482c061d8e18866e259ef46d"); }
+
+/**----------------------------------------MAIN SOBRE NOSOTROS------------------------ **/
+/** VARIABLES **/
+/*-----------------------------FOOTER---------------------------*/
+footer {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  grid-area: footer;
+  background-color: #CF5D20;
+  color: #EDEDED; }
+  footer .grupo-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 5%; }
+    footer .grupo-1 .box {
+      display: flex;
+      align-items: center;
+      padding: 20px; }
+    footer .grupo-1 .box_1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 5px; }
+      footer .grupo-1 .box_1 .showroom,
+      footer .grupo-1 .box_1 p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 5px;
+        color: #fff;
+        text-align: center; }
+      footer .grupo-1 .box_1 .redes a {
+        padding: 0px 20px;
+        justify-content: space-evenly; }
+        footer .grupo-1 .box_1 .redes a img {
+          opacity: 1; }
+      footer .grupo-1 .box_1 .servicios a {
+        text-decoration: none;
+        color: #EDEDED; }
+      footer .grupo-1 .box_1 .contacto {
+        display: flex;
+        flex-direction: column; }
+        footer .grupo-1 .box_1 .contacto a {
+          text-decoration: none;
+          color: #EDEDED; }
+
+/*--------------------------------MEDIA QUERIES--------------------*/
