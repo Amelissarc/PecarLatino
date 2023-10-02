@@ -112,7 +112,8 @@ main {
   /* Index - Deco */
   /* Index - Proyectos a medida */
   /* Index - Café */
-  /**----------------------------------------MAIN SOBRE NOSOTROS------------------------ **/ }
+  /**----------------------------------------MAIN SOBRE NOSOTROS------------------------ **/
+  /**----------------------------------------MAIN MUEBLES------------------------ **/ }
   main .hero .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -256,6 +257,43 @@ main {
         color: #000000;
         margin-bottom: 50px;
         width: 1400px; }
+  main .principal_muebles {
+    color: black;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center; }
+  main .seccion_muebles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; }
+    main .seccion_muebles .imagen_mueble_principal {
+      width: 1400px;
+      height: auto;
+      margin-bottom: 100px; }
+      main .seccion_muebles .imagen_mueble_principal img {
+        max-width: 100%;
+        height: auto; }
+    main .seccion_muebles .imagenes_muebles_secundario {
+      width: 1400px;
+      display: flex;
+      justify-content: center;
+      gap: 20px; }
+      main .seccion_muebles .imagenes_muebles_secundario .grupo_imagenes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 100px; }
+        main .seccion_muebles .imagenes_muebles_secundario .grupo_imagenes .sobre_nosotros_img .img_muebles {
+          max-width: 100%;
+          height: auto; }
+        main .seccion_muebles .imagenes_muebles_secundario .grupo_imagenes .sobre_nosotros_img .text_muebles {
+          text-align: center;
+          font-size: 24px;
+          color: #000000;
+          margin-top: 10px;
+          margin-bottom: 50px; }
 
 /** VARIABLES **/
 /*-----------------------------FOOTER---------------------------*/
