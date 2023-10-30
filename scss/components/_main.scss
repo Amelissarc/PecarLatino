@@ -237,14 +237,13 @@ main {
     }
 
     /**----------------------------------------MAIN MUEBLES------------------------ **/
-
     .principal_muebles {
         color: black;
         margin-top: 200px;
         margin-bottom: 100px;
         text-align: center;
     }
-    
+
     .seccion_muebles {
         display: flex;
         flex-direction: column;
@@ -252,44 +251,54 @@ main {
         gap: 20px;
 
         .imagen_mueble_principal {
-            width: 1400px;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
             height: auto;
             margin-bottom: 100px;
+            align-items: center;
 
             img {
-                max-width: 100%;
                 height: auto;
+                width: 80%;
             }
         }
+    }
 
-        .imagenes_muebles_secundario {
-            width: 1400px;
+    .grupo_muebles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 80%;
+        margin-bottom: 30px;
+
+        .muebles_img {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
             gap: 20px;
+            width: 80%;
 
-            .grupo_imagenes {
+            div {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 10px;
-                margin-bottom: 100px;
 
-                .sobre_nosotros_img {
-                    .img_muebles {
-                        max-width: 100%;
-                        height: auto;
-                    }
+                img {
+                    width: 100%;
+                    max-width: 600px;
+                    height: 900px;
+                    object-fit: cover;
+                }
 
-                    .text_muebles {
-                        text-align: center;
-                        font-size: 24px;
-                        color: #000000;
-                        margin-top: 10px;
-                        margin-bottom: 50px;
-                    }
+                .mueble-text {
+                    text-align: center;
+                    font-size: 16px;
+                    color: #333;
                 }
             }
         }
     }
+
 }

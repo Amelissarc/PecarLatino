@@ -268,32 +268,41 @@ main {
     align-items: center;
     gap: 20px; }
     main .seccion_muebles .imagen_mueble_principal {
-      width: 1400px;
-      height: auto;
-      margin-bottom: 100px; }
-      main .seccion_muebles .imagen_mueble_principal img {
-        max-width: 100%;
-        height: auto; }
-    main .seccion_muebles .imagenes_muebles_secundario {
-      width: 1400px;
       display: flex;
-      justify-content: center;
-      gap: 20px; }
-      main .seccion_muebles .imagenes_muebles_secundario .grupo_imagenes {
+      flex-direction: column;
+      width: 80%;
+      height: auto;
+      margin-bottom: 100px;
+      align-items: center; }
+      main .seccion_muebles .imagen_mueble_principal img {
+        height: auto;
+        width: 80%; }
+  main .grupo_muebles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin-bottom: 30px; }
+    main .grupo_muebles .muebles_img {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      width: 80%; }
+      main .grupo_muebles .muebles_img div {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 100px; }
-        main .seccion_muebles .imagenes_muebles_secundario .grupo_imagenes .sobre_nosotros_img .img_muebles {
-          max-width: 100%;
-          height: auto; }
-        main .seccion_muebles .imagenes_muebles_secundario .grupo_imagenes .sobre_nosotros_img .text_muebles {
+        align-items: center; }
+        main .grupo_muebles .muebles_img div img {
+          width: 100%;
+          max-width: 600px;
+          height: 900px;
+          object-fit: cover; }
+        main .grupo_muebles .muebles_img div .mueble-text {
           text-align: center;
-          font-size: 24px;
-          color: #000000;
-          margin-top: 10px;
-          margin-bottom: 50px; }
+          font-size: 16px;
+          color: #333; }
 
 /** VARIABLES **/
 /*-----------------------------FOOTER---------------------------*/
