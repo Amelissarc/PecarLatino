@@ -252,11 +252,12 @@ main {
         max-width: 700px;
         height: auto; }
     main .imagenes_sobre_nosotros .bienvenidos-text {
-      text-align: center; }
+      text-align: justify;
+      width: 80%;
+      max-width: 1200px; }
       main .imagenes_sobre_nosotros .bienvenidos-text p {
         color: #000000;
-        margin-bottom: 50px;
-        width: 1400px; }
+        margin-bottom: 50px; }
   main .principal_muebles {
     color: black;
     margin-top: 200px;
@@ -293,7 +294,8 @@ main {
       main .grupo_muebles .muebles_img div {
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        transition: box-shadow 0.3s ease; }
         main .grupo_muebles .muebles_img div img {
           width: 100%;
           max-width: 600px;
@@ -304,6 +306,71 @@ main {
           text-align: center;
           font-size: 16px;
           color: #333; }
+        main .grupo_muebles .muebles_img div .mueble-description {
+          display: none; }
+      main .grupo_muebles .muebles_img div:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.modal-content {
+  display: flex;
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative; }
+  .modal-content .modal-container {
+    display: flex; }
+  .modal-content .modal-image {
+    flex: 1;
+    max-width: 50%;
+    padding: 10px; }
+  .modal-content .modal-text {
+    flex: 1;
+    max-width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; }
+  .modal-content .modal-text p {
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  .modal-content img {
+    height: 400px;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto; }
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer; }
+
+.close:hover,
+.close:focus {
+  color: #333; }
+
+.modal,
+.modal-content {
+  transition: 0.3s; }
 
 /**----------------------------------------LOGO FLOTANTE------------------------ **/
 .fixed {
