@@ -309,7 +309,7 @@ main {
         main .grupo_muebles .muebles_img div .mueble-description {
           display: none; }
       main .grupo_muebles .muebles_img div:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
 
 /* Modal */
 .modal {
