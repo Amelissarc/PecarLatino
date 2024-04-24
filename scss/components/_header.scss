@@ -38,6 +38,7 @@ header {
       list-style: none;
       text-decoration: none;
     }
+    
   
     nav li {
       width: 180px;
@@ -53,6 +54,10 @@ header {
       position: absolute;
       display: none;
       text-align: left;
+    }   
+
+    a.nav-link {
+      color: #000000; 
     }
   
     a.nav-link:hover {
@@ -71,7 +76,7 @@ header {
     }
   
     a.dropdown-item:hover {
-      background-color: #FAA51A;
+      background-color: #fa861a;
     }
   
     .navbar-collapse {
