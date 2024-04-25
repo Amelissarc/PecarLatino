@@ -63,11 +63,11 @@ main {
         height: 400px;
         margin-left: 5%;
         margin-right: 5%;
-
         // width: 90%;
         p {
             color: #7b421b;
-            font-weight: bolder
+            font-weight: bolder;
+            text-align: justify;
         }
 
         .title {
@@ -79,7 +79,6 @@ main {
             justify-content: center;
             align-items: center;
             text-align: center;
-
             .conocenosbtn {
                 border-radius: 14px;
                 background-color: #7b421b;

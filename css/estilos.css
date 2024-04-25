@@ -35,67 +35,17 @@ button {
 /** VARIABLES **/
 /*----------------HEADER----------------------*/
 header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
   grid-area: header;
-  width: 100%;
-  font-weight: 500;
+  margin-right: 5%;
   color: #412C25;
-  background-color: #ffffff;
-  font-size: 14px;
-  position: fixed;
-  top: 0;
-  z-index: 1002; }
-  header .container-fluid {
-    background-color: #ffffff;
-    padding: 0%;
-    height: 100px;
-    width: 100%; }
-  header .navbar {
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end; }
-  header .navbar {
-    height: 100px;
-    margin-top: 0%;
-    padding: 0%; }
-  header nav li a {
-    list-style: none;
-    text-decoration: none; }
-  header nav li {
-    width: 180px;
-    position: relative; }
-  header nav ul {
-    list-style: none;
-    text-align: center; }
-  header nav ul ul {
-    position: absolute;
-    display: none;
-    text-align: left; }
-  header a.nav-link {
-    color: #000000; }
-  header a.nav-link:hover {
-    color: #FAA51A; }
-  header .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center; }
-  header .dropdown-menu a.dropdown-item {
-    color: #412C25;
-    font-weight: 300; }
-  header a.dropdown-item:hover {
-    background-color: #fa861a; }
-  header .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 0;
-    align-items: center; }
+  font-size: 18px; }
   header .logoheader {
     width: 200px;
     height: auto;
     margin: 0 50px 0 50px;
     border-radius: 50px;
-    opacity: 1; }
+    opacity: 1;
+    background-color: #ffffff; }
 
 /** VARIABLES **/
 /* Estilos del Main */
@@ -155,7 +105,8 @@ main {
     margin-right: 5%; }
     main .sobrenosotros p {
       color: #7b421b;
-      font-weight: bolder; }
+      font-weight: bolder;
+      text-align: justify; }
     main .sobrenosotros .title {
       color: #7b421b; }
     main .sobrenosotros .button {
