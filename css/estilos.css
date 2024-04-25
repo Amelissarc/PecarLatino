@@ -42,13 +42,13 @@ header {
   width: 100%;
   font-weight: 500;
   color: #412C25;
-  background-color: #FEF9F5;
+  background-color: #ffffff;
   font-size: 14px;
   position: fixed;
   top: 0;
   z-index: 1002; }
   header .container-fluid {
-    background-color: #FEF9F5;
+    background-color: #ffffff;
     padding: 0%;
     height: 100px;
     width: 100%; }
@@ -108,7 +108,6 @@ main {
   grid-area: main;
   background-color: #ffff;
   margin: 0 auto;
-  /* Index - Sobre nosotros */
   /* Index - Muebles */
   /* Index -Espacios */
   /* Index - Deco */
@@ -121,8 +120,8 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 43rem;
-    max-width: 100%;
+    height: 100vh;
+    max-width: 90%;
     position: relative;
     margin: 0 auto; }
     main .hero .parallax .carousel-item {
@@ -148,24 +147,75 @@ main {
         object-fit: cover; }
   main .sobrenosotros {
     padding: 5% 15%;
+    margin-top: 2%;
     background-color: #F5EAD4;
     gap: 20px;
-    height: 400px; }
+    height: 400px;
+    margin-left: 5%;
+    margin-right: 5%; }
     main .sobrenosotros p {
-      color: #412C25; }
+      color: #7b421b;
+      font-weight: bolder; }
+    main .sobrenosotros .title {
+      color: #7b421b; }
     main .sobrenosotros .button {
       display: flex;
       justify-content: center;
-      text-align: center;
-      align-items: center; }
+      align-items: center;
+      text-align: center; }
       main .sobrenosotros .button .conocenosbtn {
         border-radius: 14px;
-        background-color: #412C25;
+        background-color: #7b421b;
         color: #F5EAD4;
         font-size: 18px;
-        font-weight: 400; }
+        font-weight: 400;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer; }
   main .muebles {
+    margin-top: 2%;
     padding: 3% 15%; }
+    main .muebles h2 {
+      margin-bottom: 3%;
+      color: #7b421b; }
+    main .muebles .carousel-inner .carousel-item {
+      position: relative;
+      background-color: black; }
+      main .muebles .carousel-inner .carousel-item img {
+        /* Estilos de la imagen */
+        opacity: 0.6; }
+      main .muebles .carousel-inner .carousel-item .carousel-text {
+        margin-bottom: 55%;
+        margin-left: 50%;
+        font-weight: bolder;
+        text-shadow: #000000 0.1em 0.1em 0.2em;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        /* Otros estilos para el texto */ }
+      main .muebles .carousel-inner .carousel-item .button {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration-color: black;
+        margin-bottom: 15%; }
+    main .muebles .descubribtn {
+      border-radius: 20px;
+      background-color: white;
+      color: black;
+      /* Cambia el color del texto aquí */
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: bolder;
+      cursor: pointer; }
+    main .muebles .descubribtn:hover {
+      background-color: #f0f0f0;
+      /* Puedes agregar estilos adicionales para el estado hover del botón aquí */ }
+    main .muebles .descubribtn:hover {
+      background-color: #f0f0f0;
+      /* Cambiar el color de fondo al pasar el mouse */ }
   main .card-group {
     gap: 20px;
     padding: 5% 15%; }
