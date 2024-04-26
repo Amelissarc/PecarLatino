@@ -1,128 +1,46 @@
 @import "../base/variables";
 
 /*----------------HEADER----------------------*/
-// header {
-//   grid-area: header;
-//   background-color: #ffffff; // Color de fondo del header
-
-//       .logoheader {
-//       width: 200px; // Ajusta el ancho del logo según las necesidades
-//       height: auto;
-//       margin: 0 50px 0 50px;
-//       border-radius: 50px;
-//       opacity: 1;
-//     }
-// }
-
-
 header {
-  // align-items: center;
-  // display: flex;
-  //  justify-content: space-between;
   grid-area: header;
-  margin-right: 5%;
-  // margin-left: 5%;
-  // font-weight: 500;
-  color: #412C25; // Color del texto del header
-  font-size: 18px;
+  color: #412C25;
+  font-size: 14px;
 
-
-  // position: fixed;
-  // top: 0;
-  // z-index: 1002;
-
-  // .container-fluid {
-  //   background-color: rgb(255, 255, 255);
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: space-between;
-  // }
-
-
-  // align-items: center;
-
-  // background-color: #ffffff;
-  // padding: 0%;
-  // height: 100px;
-  // width: 100%;
-  // }
-
-  // .navbar {
-  //   flex-grow: 1;
-  //   display: flex;
-  //   justify-content: flex-end;
-  // }
-
-
-
-
-
-  // nav li a {
-  //   list-style: none;
-  //   text-decoration: none;
-  // }
-
-
-  nav li {
-    // width: 180px;
-    // background-color: #fa861a;
-    // position: relative;
-    // background-color: #ffffff;
-
+  .container-fluid {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
   }
 
-  nav ul {
-    // list-style: none;
-    // text-align: center;
+  .navbar-brand {
+    .logoheader {
+      width: 150px;
+      height: auto;
+      border-radius: 50px;
+      opacity: 1;
+      background-color: #ffffff;
+    }
   }
 
-  // nav ul ul {
-  //   position: absolute;
-  //   display: none;
-  //   text-align: left;
-  // }   
+  .navbar-nav {
+    display: flex;
+    flex-grow: 1;
 
-  // a.nav-link {
-  //   color: #000000; 
-  // }
+    .nav-item {
+      flex-grow: 1;
+      margin-left: 5%;
 
-  // a.nav-link:hover {
-  //   color: #FAA51A;
-  // }
-
-  // .navbar-collapse {
-  //   flex-basis: 100%;
-  //   flex-grow: 1;
-  //   align-items: center;
-  // }
-
-  // .dropdown-menu a.dropdown-item {
-  //   color: #412C25;
-  //   font-weight: 300;
-  // }
-
-  // a.dropdown-item:hover {
-  //   background-color: #fa861a;
-  // }
-
-  .navbar-collapse {
-    // flex-basis: 100%;
-    // flex-grow: 0;
-    // align-items: center;
+      a {
+        font-weight: bolder;
+        color: #000000;
+      }
+    }
   }
 
-  .logoheader {
-    width: 200px; // Ajusta el ancho del logo según las necesidades
-    height: auto;
-    margin: 0 50px 0 50px;
-    border-radius: 50px;
-    opacity: 1;
-    background-color: #ffffff;
-
+  a.nav-link:hover {
+    color: #FAA51A;
   }
 
-  //   .navbar-toggler {
-  //     margin-left: auto; /* Alinea el botón al lado derecho */
-  // }
-
+  a.dropdown-item:hover {
+    background-color: #fa861a;
+  }
 }

@@ -36,16 +36,30 @@ button {
 /*----------------HEADER----------------------*/
 header {
   grid-area: header;
-  margin-right: 5%;
   color: #412C25;
-  font-size: 18px; }
-  header .logoheader {
-    width: 200px;
+  font-size: 14px; }
+  header .container-fluid {
+    background-color: white;
+    width: 90%; }
+  header .navbar-brand .logoheader {
+    width: 150px;
     height: auto;
-    margin: 0 50px 0 50px;
     border-radius: 50px;
     opacity: 1;
     background-color: #ffffff; }
+  header .navbar-nav {
+    display: flex;
+    flex-grow: 1; }
+    header .navbar-nav .nav-item {
+      flex-grow: 1;
+      margin-left: 5%; }
+      header .navbar-nav .nav-item a {
+        font-weight: bolder;
+        color: #000000; }
+  header a.nav-link:hover {
+    color: #FAA51A; }
+  header a.dropdown-item:hover {
+    background-color: #fa861a; }
 
 /** VARIABLES **/
 /* Estilos del Main */
